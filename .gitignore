@@ -134,3 +134,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+effisend-kaia/app.json
+effisend-kaia/patches/react-native-qrcode-styled+0.2.1.patch
+effisend-kaia/patches/react-native-virtual-keyboard+1.2.2.patch
