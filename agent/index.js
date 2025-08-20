@@ -29,7 +29,7 @@ const rpcs = [
   "https://kaia.blockpi.network/v1/rpc/public",
   "https://klaytn.api.onfinality.io/public",
   "https://go.getblock.io/d7094dbd80ab474ba7042603fe912332",
-];
+]
 
 const provider = new DynamicProvider(rpcs, {
   strategy: new FallbackStrategy(),

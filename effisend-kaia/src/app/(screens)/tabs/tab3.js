@@ -244,7 +244,7 @@ export default function Tab3() {
               <View style={styles.benefitItem}>
                 <Ionicons name="gift" size={20} color="#8B5CF6" />
                 <Text style={styles.benefitText}>
-                  Earn USDC rewards for maintaining verification
+                  Earn USDT rewards for maintaining verification
                 </Text>
               </View>
 

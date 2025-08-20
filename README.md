@@ -298,7 +298,7 @@ DeSmond also bridges the gap between crypto and traditional spending through Met
 <!-- end list -->
 
 ```javascript
-const fundMetaMaskCard = tool(
+const fundKastCard = tool(
   async ({ amount, to }, { configurable: { user } }) => {
     const response = await fetchURL(process.env.TOP_UP_PAYMENT_API, {
       user,
@@ -315,14 +315,14 @@ const fundMetaMaskCard = tool(
     const { hash } = response;
     return JSON.stringify({
       status: "success",
-      message: "Transaction created and available on your MetaMask Card.",
+      message: "Your USDT has been transferred to your Kast Card.",
       transaction: hash,
     });
   },
   {
-    name: "fund_metamask_card",
+    name: "fund_kast_card",
     description:
-      "This tool facilitates transfers where the specified amount is in USD, but the sending token is USDT on the Kaia Mainnet. It generates transaction data for the user to sign and activates when the user explicitly opts to send USD to a MetaMask Card or mentions relevant terms such as 'transfer,' 'USDT,' 'Kaia Mainnet,' or 'MetaMask Card' in the context of wallet activity.",
+      "This tool facilitates transfers where the specified amount is in USD, but the sending token is USDT on the Kaia Mainnet to USDT on Arbitrum. It generates transaction data for the user to sign and activates when the user explicitly opts to send USD to a Kast Card or mentions relevant terms such as 'transfer,' 'USDT,' 'Kaia Mainnet,' or 'Kast Card' in the context of wallet activity.",
     schema: z.object({
       amount: z.string(),
       to: z.string(),
@@ -336,4 +336,4 @@ const fundMetaMaskCard = tool(
 All technical implementations for this module are included here.
 
   - [**Agent Code Snippets**](./agent/index.js)
-  - [**Fund MetaMask Card**](./kaia-functions/kaia-usdt-linea.js)
+  - [**Fund KAST Card**](./kaia-functions/kaia-usdt-arbitrum.js)

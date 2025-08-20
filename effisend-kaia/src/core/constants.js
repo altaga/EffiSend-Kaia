@@ -53,11 +53,11 @@ export const blockchain = {
   iconSymbol: "kaia",
   decimals: 18,
   batchBalancesAddress: "0xba9b522EFb2E9dffA0aD7fdEB6A702A5B116dBd7",
-  color: "#bff009",
+  color: "#96bf00",
   tokens: [
     {
       name: "Kaia Token",
-      color: "#bff009",
+      color: "#96bf00",
       symbol: "KAIA",
       address: "0x0000000000000000000000000000000000000000",
       decimals: 18,
